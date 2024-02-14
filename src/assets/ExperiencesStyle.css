@@ -6,11 +6,17 @@
 }
 
 .is-coralis-studio {
-    padding: 1rem;
+    padding: 2rem 1rem;
 }
 
 .is-dragnethar {
-    padding: 0.5rem;
+    display: grid;
+    padding: 1rem;
+    background-color: rgb(0, 19, 46);
+    width: 100%;
+    border-top: 2px rgb(191, 180, 143) solid;
+    border-bottom: 2px rgb(191, 180, 143) solid;
+    overflow: hidden;
 }
 
 .is-dragnethar-header {
@@ -21,7 +27,9 @@
 .is-tech-use {
     display: grid;
     grid-template-columns: 1fr 0.3fr 0.3fr 0.3fr;
+    padding-right: 10px;
     align-items: center;
+    justify-items: end;
 }
 
 
