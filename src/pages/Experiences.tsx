@@ -1,8 +1,17 @@
 import '../assets/ExperiencesStyle.css';
 
+// custom icons
+import CodeIgniterSvg from '../assets/svgs/codeigniter-logo-svg-vector.svg';
+import UnitySvg from '../assets/svgs/unity3d-icon.svg';
+import MariaDBSvg from '../assets/svgs/mariadb-logo-svg-vector.svg';
+
+// components
+import CustomIcons from '../components/CustomIcons';
+
 export default function Experiences() {
+
   return (
-    <div className='is-container'>
+    <div className='is-container is-experiences'>
         <div className='is-coralis-studio'>
             <h3> Coralis Studio </h3>
             <p> Coralis Studio branches to two kinds, IT development and game development. Coralis Studio provide services such as website development, web application development, game design and development and hybrid development</p>
@@ -11,9 +20,9 @@ export default function Experiences() {
                     <h4> Dragnethar </h4>
                     <div className="is-tech-use">
                         <p> Tech use: </p>
-                        <div> icon here </div>
-                        <div> icon here </div>
-                        <div> icon here </div>
+                        <CustomIcons imageSrc={CodeIgniterSvg} tooltipTitle='CodeIgniter 3'/>
+                        <CustomIcons imageSrc={MariaDBSvg} tooltipTitle='MariaDB'/>
+                        <CustomIcons imageSrc={UnitySvg} tooltipTitle='Unity'/>
                     </div>
                 </div>
                 <p> Dragnethar is a point-and-click web RPG that I worked on </p>

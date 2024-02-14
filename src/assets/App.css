@@ -21,7 +21,7 @@ p {
 }
 
 .is-container {
-    min-height: 50vh;
+    min-height: 100vh;
     display: grid;
     justify-items: center;
     align-content: center;
