@@ -1,0 +1,12 @@
+/* Mobile base */
+
+.is-about {
+    min-height: 20vh;
+    background-color: var(--color-palette-dark-blue);
+    padding: 2rem;
+}
+
+
+@media screen and (min-width: 1920px) {
+    
+}

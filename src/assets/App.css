@@ -1,0 +1,28 @@
+:root {
+    --color-palette-black: rgb(4, 20, 31);
+    --color-palette-dark-blue: rgb(7, 34, 54);
+    --color-palette-orange: rgb(213, 160, 33);
+    --color-palette-white: rgb(237, 231, 217);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: var(--color-palette-black);
+    color: var(--color-palette-white);
+    font-family: "Poppins";
+    font-weight: 400;
+}
+  
+p {
+    margin: 0;
+    text-align: justify;
+}
+
+.is-container {
+    min-height: 50vh;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+}

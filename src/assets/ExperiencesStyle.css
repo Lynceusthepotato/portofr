@@ -1,0 +1,25 @@
+/* Mobile base */
+
+.is-coralis-studio {
+    padding: 1rem;
+}
+
+.is-dragnethar {
+    padding: 0.5rem;
+}
+
+.is-dragnethar-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.is-tech-use {
+    display: grid;
+    grid-template-columns: 1fr 0.3fr 0.3fr 0.3fr;
+    align-items: center;
+}
+
+
+@media screen and (min-width: 1920px) {
+    
+}
