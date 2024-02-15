@@ -33,6 +33,20 @@ p {
     align-content: center;
 }
 
+nav {
+    position: fixed;
+    width: 100%;
+    background: var(--color-palette-black);
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding-right: 10px;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
     background-color: transparent; 
