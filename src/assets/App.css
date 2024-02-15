@@ -3,6 +3,12 @@
     --color-palette-dark-blue: rgb(7, 34, 54);
     --color-palette-orange: rgb(213, 160, 33);
     --color-palette-white: rgb(237, 231, 217);
+
+    /* Dragnethar Color */
+    --Dragnethar-accent: rgb(191, 180, 143);
+    --Dragnethar-background: rgb(20, 52, 74);
+    --Dragnethar-blue: rgb(0, 19, 46);
+
 }
 
 html, body {
