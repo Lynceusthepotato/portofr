@@ -1,6 +1,6 @@
 import '../assets/ExperiencesStyle.css';
 
-// custom icons
+// icons
 import CodeIgniterSvg from '../assets/svgs/codeigniter-logo-svg-vector.svg';
 import UnitySvg from '../assets/svgs/unity3d-icon.svg';
 import MariaDBSvg from '../assets/svgs/mariadb-logo-svg-vector.svg';
@@ -32,7 +32,7 @@ export default function Experiences() {
                         <CustomIcons imageSrc={UnitySvg} tooltipTitle='Unity'/>
                     </div>
                 </div>
-                <p> Dragnethar is a point-and-click web RPG that Coralis Studio created, and where I got my first internship experience </p>
+                <p> Dragnethar is a point-and-click web RPG that Coralis Studio created, and the project I was assigned for my first internship experience. I help updated the game until around version 1.2.5, here are couple of examples that I have done </p>
                 <div className="is-dragnethar-experiences">
                     <div style={{display: 'grid', margin:'10px', gridGap:'10px'}}>
                         <CustomSubHeader subHeaderStyle={{color:'var(--Dragnethar-accent)'}} title={"UI Developed and updated"}/>
@@ -42,10 +42,10 @@ export default function Experiences() {
                             <>
                             <CustomSliderCard 
                             sliderCardStyle={DragnetharCustomCardTheme}
-                            children={<CustomImageCard />} description={"Player profile overhaul"} />
+                            children={<CustomImageCard imageCardStyle={{background: "url('../assets/dragnetharExperience/player_profile_overhaul.png')"}}/>} description={"Player profile overhaul"} />
                             <CustomSliderCard 
                             sliderCardStyle={DragnetharCustomCardTheme}
-                            children={<CustomImageCard />} description={"Player profile setting changed"} />
+                            children={<CustomImageCard />} description={"Updated player setting"} />
                             <CustomSliderCard 
                             sliderCardStyle={DragnetharCustomCardTheme}
                             children={<CustomImageCard />} description={"Region overhaul"} />
