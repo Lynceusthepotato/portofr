@@ -71,10 +71,10 @@ export default function Experiences() {
                             children={<CustomImageCard className='is-custom-image is-party-system'/>} description={"Party Management"} />
                             <CustomSliderCard 
                             sliderCardStyle={DragnetharCustomCardTheme}
-                            children={<CustomImageCard className='is-custom-image is-party-explore'/>} description={"Exploration while in a party"} />
+                            children={<CustomImageCard className='is-custom-image is-party-explore'/>} description={"Party Exploration"} />
                             <CustomSliderCard 
                             sliderCardStyle={DragnetharCustomCardTheme}
-                            children={<CustomImageCard />} description={"Combat while in a party"} />
+                            children={<CustomImageCard className='is-custom-image is-party-combat'/>} description={"Party Combat"} />
                             </>}
                         />
                     </div>
@@ -85,16 +85,16 @@ export default function Experiences() {
                             <>
                             <CustomSliderCard 
                             sliderCardStyle={DragnetharCustomCardTheme}
-                            children={<CustomImageCard />} description={"Multiple container open feature"} />
+                            children={<CustomImageCard className='is-custom-image is-multiple-container' />} description={"Multiple container open feature"} />
                             <CustomSliderCard 
                             sliderCardStyle={DragnetharCustomCardTheme}
-                            children={<CustomImageCard />} description={"Multiple salvage feature"} />
+                            children={<CustomImageCard className='is-custom-image is-multiple-salvage' />} description={"Multiple salvage feature"} />
                             <CustomSliderCard 
                             sliderCardStyle={DragnetharCustomCardTheme}
-                            children={<CustomImageCard />} description={"Equipment loadout feature"} />
+                            children={<CustomImageCard className='is-custom-image is-loadout-feature' />} description={"Equipment loadout feature"} />
                             <CustomSliderCard 
                             sliderCardStyle={DragnetharCustomCardTheme}
-                            children={<CustomImageCard />} description={"Equipment lock system"} />
+                            children={<CustomImageCard className='is-custom-image is-item-lock' />} description={"Equipment lock system"} />
                             </>}
                         />
                     </div>
@@ -145,13 +145,16 @@ export default function Experiences() {
                             <>
                             <CustomSliderCard 
                             sliderCardStyle={DragnetharCustomCardTheme}
-                            children={<CustomImageCard />} description={"Artificer Minigame Update"} />
+                            children={<CustomImageCard className='is-custom-image is-artificer' />} description={"Artificer Minigame Update"} />
                             <CustomSliderCard 
                             sliderCardStyle={DragnetharCustomCardTheme}
-                            children={<CustomImageCard />} description={"Trade Hall QoL"} />
+                            children={<CustomImageCard className='is-custom-image is-trade-hall' />} description={"Trade Hall QoL"} />
                             <CustomSliderCard 
                             sliderCardStyle={DragnetharCustomCardTheme}
-                            children={<CustomImageCard />} description={"Guild Buff"} />
+                            children={<CustomImageCard className='is-custom-image is-building-buff' />} description={"Building Buff"} />
+                            <CustomSliderCard 
+                            sliderCardStyle={DragnetharCustomCardTheme}
+                            children={<CustomImageCard className='is-custom-image is-pagination' />} description={"Pagination"} />
                             </>}
                         />
                     </div>

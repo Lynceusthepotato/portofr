@@ -75,6 +75,23 @@
 .is-party-system {
     background-image: url("../assets/dragnetharExperience/partySystem/Party_System.png");
 }
+.is-party-combat {
+    background-image: url("../assets/dragnetharExperience/partySystem/party_combat.png");
+}
+
+/* qol */
+.is-multiple-container {
+    background-image: url("../assets/dragnetharExperience/qol/mass_container.png");
+}
+.is-multiple-salvage {
+    background-image: url("../assets/dragnetharExperience/qol/mass_salvage.png");
+}
+.is-loadout-feature {
+    background-image: url("../assets/dragnetharExperience/qol/equipment_loadout.png");
+}
+.is-item-lock {
+    background-image: url("../assets/dragnetharExperience/qol/item_lock.png");
+}
 
 /* Rhunnia */
 .is-login-menu {
@@ -102,6 +119,23 @@
 }
 .is-crimson-brew {
     background-image: url("../assets/dragnetharExperience/illus/Crimson_Brew_porto.png");
+}
+
+/* others */
+.is-artificer {
+    background-image: url("../assets/dragnetharExperience/others/artificer_minigame.png");
+}
+
+.is-trade-hall {
+    background-image: url("../assets/dragnetharExperience/others/tradehall_qol.png");
+}
+
+.is-pagination {
+    background-image: url("../assets/dragnetharExperience/others/pagination.png");
+}
+
+.is-building-buff {
+    background-image: url("../assets/dragnetharExperience/others/building_buff.png");
 }
 
 @media screen and (min-width: 1366px) {
