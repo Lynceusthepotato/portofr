@@ -8,7 +8,7 @@ type CustomSliderCardProps = {
 const DefaultSliderCardStyle:React.CSSProperties = {
     background: 'gray',
     minHeight: '400px',
-    maxWidth: '350px',
+    maxWidth: '260px',
     borderRadius: '10px',
 }
 

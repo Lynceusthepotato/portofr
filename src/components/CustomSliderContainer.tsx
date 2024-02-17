@@ -14,7 +14,7 @@ export default function CustomSliderContainer({children, sliderContainerStyle}: 
     const CustomSliderContainerStyle = {...DefaultCustomSliderContainerStyle, ...sliderContainerStyle}
     return (
         <div style={{overflowX:'auto'}}>
-            <div style={CustomSliderContainerStyle}>
+            <div className='is-custom-slider-container' style={CustomSliderContainerStyle}>
                 {children}
             </div>
         </div>

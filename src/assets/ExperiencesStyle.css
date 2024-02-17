@@ -33,9 +33,85 @@
     justify-items: end;
 }
 
+/* Image for showcase */
+.is-custom-image {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* UI */
+.is-player-profile-overhaul {
+    background-image: url("../assets/dragnetharExperience/ui/player_profile_overhaul.png");
+}
+
+.is-player-setting {
+    background-image: url("../assets/dragnetharExperience/ui/player_setting.png");
+}
+
+.is-region-overhaul {
+    background-image: url("../assets/dragnetharExperience/ui/region_overhaul.png");
+}
+
+.is-tavern-overhaul {
+    background-image: url("../assets/dragnetharExperience/ui/tavern_overhaul.png");
+}
+
+.is-explore-overhaul {
+    background-image: url("../assets/dragnetharExperience/ui/exploration_overhaul.png");
+}
+
+.is-quest-modal {
+    background-image: url("../assets/dragnetharExperience/ui/quest_modal.png");
+}
+
+/* party */
+.is-party-system {
+    background-image: url("../assets/dragnetharExperience/partySystem/Party_System.png");
+}
+.is-party-explore {
+    background-image: url("../assets/dragnetharExperience/partySystem/explore_party.png");
+}
+.is-party-system {
+    background-image: url("../assets/dragnetharExperience/partySystem/Party_System.png");
+}
+
+/* Rhunnia */
+.is-login-menu {
+    background-image: url("../assets/dragnetharExperience/rhunnia/Login_menu.png");
+}
+.is-main-menu {
+    background-image: url("../assets/dragnetharExperience/rhunnia/Main_menu.png");
+}
+.is-team-management {
+    background-image: url("../assets/dragnetharExperience/rhunnia/Team_management.png");
+}
+.is-combat {
+    background-image: url("../assets/dragnetharExperience/rhunnia/Combat.png");
+}
+
+/* illus */
+.is-rockmucher {
+    background-image: url("../assets/dragnetharExperience/illus/Rockmuncher_for_porto.png");
+}
+.is-magnetic-graunite {
+    background-image: url("../assets/dragnetharExperience/illus/Magnetic_graunite_porto.png");
+}
+.is-thermal-graunite {
+    background-image: url("../assets/dragnetharExperience/illus/Thermal_graunite_porto.png");
+}
+.is-crimson-brew {
+    background-image: url("../assets/dragnetharExperience/illus/Crimson_Brew_porto.png");
+}
 
 @media screen and (min-width: 1366px) {
     .is-dragnethar-header {
         grid-template-columns: 0.8fr 0.2fr;
+    }
+}
+@media screen and (min-width: 1744px) {
+    .is-custom-slider-container {
+        justify-content: center;
+        align-items: center;
     }
 }

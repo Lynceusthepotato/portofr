@@ -1,37 +1,22 @@
-import { Route, Routes } from 'react-router-dom';
+import { Link, Element } from 'react-scroll';
 import './assets/App.css';
 
 // pages
 import Home from './pages/Home';
 import About from './pages/About';
 import Experiences from './pages/Experiences';
-
-import { Link, Element } from 'react-scroll';
-import { Projects } from './pages/Projects';
-import { Contact } from './pages/Contact';
-
+import Projects  from './pages/Projects';
 
 function App() {
   return (
     <>
       <nav>
-        <ul>
-          <li>
-            <Link to="Home" smooth={true} duration={500}>Home</Link>
-          </li>
-          <li>
-            <Link to="About" smooth={true} duration={500}>About</Link>
-          </li>
-          <li>
-            <Link to="Experiences" smooth={true} duration={500} offset={-20}>Experiences</Link>
-          </li>
-          <li>
-            <Link to="Project" smooth={true} duration={500}>Project</Link>
-          </li>
-          <li>
-            <Link to="Contact" smooth={true} duration={500}>Contact</Link>
-          </li>
-        </ul>
+        <Link to="Home" activeClass='active' spy={true} className='is-navbar-content' smooth={true} duration={500} offset={-10}>Home</Link>
+        <Link to="About" activeClass='active' spy={true} className='is-navbar-content' smooth={true} duration={500}>About</Link>
+        <Link to="Experiences" activeClass='active' spy={true} className='is-navbar-content' smooth={true} duration={500} offset={-50}>Experiences</Link>
+        <Link to="Project" activeClass='active' spy={true} className='is-navbar-content' smooth={true} duration={500}>Project</Link>
+        {/* <Link to="Contact" activeClass='active' spy={true} className='is-navbar-content' smooth={true} duration={500}>Contact</Link> */}
+        <div style={{width:'5%'}}/> {/* only for style */}
       </nav>
       <Element name="Home">
         <section>
@@ -53,11 +38,11 @@ function App() {
           <Projects/>
         </section>
       </Element>
-      <Element name="Contact">
+      {/* <Element name="Contact">
         <section>
           <Contact/>
         </section>
-      </Element>
+      </Element> */}
     </>
   );
 }

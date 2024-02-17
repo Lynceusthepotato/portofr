@@ -1,7 +1,7 @@
-import React from 'react'
-
-export const Projects = () => {
+export default function Projects() {
   return (
-    <div>Projects</div>
+    <div className='is-container'>
+      <h3> Projects </h3>
+    </div>
   )
 }

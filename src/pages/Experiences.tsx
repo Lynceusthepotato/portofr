@@ -32,32 +32,32 @@ export default function Experiences() {
                         <CustomIcons imageSrc={UnitySvg} tooltipTitle='Unity'/>
                     </div>
                 </div>
-                <p> Dragnethar is a point-and-click web RPG that Coralis Studio created, and the project I was assigned for my first internship experience. I help updated the game until around version 1.2.5, here are couple of examples that I have done </p>
+                <p> Dragnethar is a point-and-click web RPG that Coralis Studio created, and the project I was assigned for my first internship experience. I work as fullstack developer and help updated the game until around version 1.2.5, here are couple of examples that I have done </p>
+                <p> Note: All of the wireframe was provided by the company</p>
                 <div className="is-dragnethar-experiences">
                     <div style={{display: 'grid', margin:'10px', gridGap:'10px'}}>
                         <CustomSubHeader subHeaderStyle={{color:'var(--Dragnethar-accent)'}} title={"UI Developed and updated"}/>
-                        <p> All of the wireframe was provided by the company</p>
                         <CustomSliderContainer
                             children={
                             <>
                             <CustomSliderCard 
                             sliderCardStyle={DragnetharCustomCardTheme}
-                            children={<CustomImageCard imageCardStyle={{background: "url('../assets/dragnetharExperience/player_profile_overhaul.png')"}}/>} description={"Player profile overhaul"} />
+                            children={<CustomImageCard className='is-custom-image is-player-profile-overhaul'/>} description={"Player profile overhaul"} />
                             <CustomSliderCard 
                             sliderCardStyle={DragnetharCustomCardTheme}
-                            children={<CustomImageCard />} description={"Updated player setting"} />
+                            children={<CustomImageCard className='is-custom-image is-player-setting' />} description={"Updated player setting"} />
                             <CustomSliderCard 
                             sliderCardStyle={DragnetharCustomCardTheme}
-                            children={<CustomImageCard />} description={"Region overhaul"} />
+                            children={<CustomImageCard className='is-custom-image is-region-overhaul' />} description={"Region overhaul"} />
                             <CustomSliderCard 
                             sliderCardStyle={DragnetharCustomCardTheme}
-                            children={<CustomImageCard />} description={"Tavern overhaul"} />
+                            children={<CustomImageCard className='is-custom-image is-tavern-overhaul' />} description={"Tavern overhaul"} />
                             <CustomSliderCard 
                             sliderCardStyle={DragnetharCustomCardTheme}
-                            children={<CustomImageCard />} description={"Explore overhaul"} />
+                            children={<CustomImageCard className='is-custom-image is-explore-overhaul' />} description={"Explore overhaul"} />
                             <CustomSliderCard 
                             sliderCardStyle={DragnetharCustomCardTheme}
-                            children={<CustomImageCard />} description={"Quest Modal"} />
+                            children={<CustomImageCard className='is-custom-image is-quest-modal' />} description={"Quest Modal"} />
                             </>}
                         />
                     </div>
@@ -68,10 +68,10 @@ export default function Experiences() {
                             <>
                             <CustomSliderCard 
                             sliderCardStyle={DragnetharCustomCardTheme}
-                            children={<CustomImageCard />} description={"Party Management"} />
+                            children={<CustomImageCard className='is-custom-image is-party-system'/>} description={"Party Management"} />
                             <CustomSliderCard 
                             sliderCardStyle={DragnetharCustomCardTheme}
-                            children={<CustomImageCard />} description={"Exploration while in a party"} />
+                            children={<CustomImageCard className='is-custom-image is-party-explore'/>} description={"Exploration while in a party"} />
                             <CustomSliderCard 
                             sliderCardStyle={DragnetharCustomCardTheme}
                             children={<CustomImageCard />} description={"Combat while in a party"} />
@@ -105,22 +105,16 @@ export default function Experiences() {
                             <>
                             <CustomSliderCard 
                             sliderCardStyle={DragnetharCustomCardTheme}
-                            children={<CustomImageCard />} description={"Monster 1"} />
+                            children={<CustomImageCard className='is-custom-image is-rockmucher'/>} description={"Rockmuncher"} />
                             <CustomSliderCard 
                             sliderCardStyle={DragnetharCustomCardTheme}
-                            children={<CustomImageCard />} description={"Rock 1"} />
+                            children={<CustomImageCard className='is-custom-image is-magnetic-graunite' />} description={"Magnetic Graunite"} />
                             <CustomSliderCard 
                             sliderCardStyle={DragnetharCustomCardTheme}
-                            children={<CustomImageCard />} description={"Rock 2"} />
+                            children={<CustomImageCard className='is-custom-image is-thermal-graunite' />} description={"Thermal Graunite"} />
                             <CustomSliderCard 
                             sliderCardStyle={DragnetharCustomCardTheme}
-                            children={<CustomImageCard />} description={"Rock 3"} />
-                            <CustomSliderCard 
-                            sliderCardStyle={DragnetharCustomCardTheme}
-                            children={<CustomImageCard />} description={"Healing"} />
-                            <CustomSliderCard 
-                            sliderCardStyle={DragnetharCustomCardTheme}
-                            children={<CustomImageCard />} description={"Cotton"} />
+                            children={<CustomImageCard className='is-custom-image is-crimson-brew' />} description={"Crimson Brew"} />
                             </>}
                         />
                     </div>
@@ -131,16 +125,16 @@ export default function Experiences() {
                             <>
                             <CustomSliderCard 
                             sliderCardStyle={DragnetharCustomCardTheme}
-                            children={<CustomImageCard />} description={"Start Menu"} />
+                            children={<CustomImageCard className='is-custom-image is-login-menu' />} description={"Start Menu"} />
                             <CustomSliderCard 
                             sliderCardStyle={DragnetharCustomCardTheme}
-                            children={<CustomImageCard />} description={"Main Menu"} />
+                            children={<CustomImageCard className='is-custom-image is-main-menu' />} description={"Main Menu"} />
                             <CustomSliderCard 
                             sliderCardStyle={DragnetharCustomCardTheme}
-                            children={<CustomImageCard />} description={"Team Managemenet"} />
+                            children={<CustomImageCard className='is-custom-image is-team-management' />} description={"Team Managemenet"} />
                             <CustomSliderCard 
                             sliderCardStyle={DragnetharCustomCardTheme}
-                            children={<CustomImageCard />} description={"Battle Scenario"} />
+                            children={<CustomImageCard className='is-custom-image is-combat' />} description={"Battle Scenario"} />
                             </>}
                         />
                     </div>

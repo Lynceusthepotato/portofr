@@ -14,7 +14,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%;
+    width: 100%;
     background: var(--color-palette-black);
     color: var(--color-palette-white);
     font-family: "Poppins";
@@ -34,17 +34,23 @@ p {
 }
 
 nav {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    justify-content: end;
     position: fixed;
     width: 100%;
     background: var(--color-palette-black);
+    font-size: calc(1em - 32%);
+    z-index: 1;
 }
 
-ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-end;
-    gap: 1rem;
-    padding-right: 10px;
+.is-navbar-content:hover {
+    border-bottom: 2px solid var(--color-palette-orange);
+}
+
+.is-navbar-content.active {
+    border-bottom: 2px solid var(--color-palette-orange);
 }
 
 ::-webkit-scrollbar {
@@ -59,4 +65,15 @@ ul {
 ::-webkit-scrollbar-thumb {
     background-color: var(--color-palette-orange);
     border-radius: 5px;
+}
+
+
+@media screen and (min-width: 400px) {
+    nav {
+        font-size: 1em;
+    }
+
+    .is-navbar-content {
+        padding: 15px;
+    }
 }
