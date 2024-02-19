@@ -1,8 +1,9 @@
 
 type CustomSliderCardProps = {
     children: React.ReactNode;
-    description: string;
+    title: string;
     sliderCardStyle?: React.CSSProperties;
+    onClick?: () => void;
 }
 
 const DefaultSliderCardStyle:React.CSSProperties = {
@@ -10,6 +11,7 @@ const DefaultSliderCardStyle:React.CSSProperties = {
     minHeight: '400px',
     maxWidth: '260px',
     borderRadius: '10px',
+    transition: 'transform 0.3s ease',
 }
 
 export const DragnetharCustomCardTheme: React.CSSProperties = {
@@ -17,12 +19,12 @@ export const DragnetharCustomCardTheme: React.CSSProperties = {
     border:'2px var(--Dragnethar-accent) solid',
 }
 
-export default function CustomSliderCard({children, description, sliderCardStyle}:CustomSliderCardProps) {
+export default function CustomSliderCard({children, title, sliderCardStyle, onClick}:CustomSliderCardProps) {
     const CustomSliderCardStyle = {...DefaultSliderCardStyle, ...sliderCardStyle}
     return (
-        <div style={CustomSliderCardStyle}>
+        <div style={CustomSliderCardStyle} className="is-custom-slider-card" onClick={onClick}>
             {children}
-            <p style={{margin:'10px'}}> {description} </p>
+            <p style={{margin:'10px'}}> {title} </p>
         </div>
     );
 }

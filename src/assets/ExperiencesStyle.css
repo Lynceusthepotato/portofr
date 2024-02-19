@@ -27,10 +27,21 @@
 
 .is-tech-use {
     display: grid;
-    grid-template-columns: 0.4fr 0.2fr 0.2fr 0.2fr;
+    grid-template-columns: .5fr .5fr;
     padding-right: 10px;
     align-items: center;
     justify-items: end;
+    margin: 10px;
+    background: var(--Dragnethar-blue);
+    border: 2px solid var(--Dragnethar-accent);
+    min-width: 50vw;
+}
+
+.is-tech-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
 }
 
 /* Image for showcase */
@@ -76,7 +87,7 @@
     background-image: url("../assets/dragnetharExperience/partySystem/Party_System.png");
 }
 .is-party-combat {
-    background-image: url("../assets/dragnetharExperience/partySystem/party_combat.png");
+    background-image: url("../assets/dragnetharExperience/partySystem/party_combat.gif");
 }
 
 /* qol */
@@ -87,7 +98,7 @@
     background-image: url("../assets/dragnetharExperience/qol/mass_salvage.png");
 }
 .is-loadout-feature {
-    background-image: url("../assets/dragnetharExperience/qol/equipment_loadout.png");
+    background-image: url("../assets/dragnetharExperience/qol/equipment_loadout.gif");
 }
 .is-item-lock {
     background-image: url("../assets/dragnetharExperience/qol/item_lock.png");
@@ -138,11 +149,39 @@
     background-image: url("../assets/dragnetharExperience/others/building_buff.png");
 }
 
+.is-custom-slider-container {
+    padding: 20px;
+}
+
+@media screen and (min-width: 500px) {
+    .is-tech-use {
+        min-width: 0;
+        grid-template-columns: .5fr .5fr;
+        justify-items: center;
+    }
+}
+
 @media screen and (min-width: 1366px) {
     .is-dragnethar-header {
         grid-template-columns: 0.8fr 0.2fr;
     }
+    /* party */
+    .is-party-combat {
+        background-image: url("../assets/dragnetharExperience/partySystem/party_combat.png");
+    }
+    .is-party-combat:hover {
+        background-image: url("../assets/dragnetharExperience/partySystem/party_combat.gif");
+    }
+
+    /* qol */
+    .is-loadout-feature {
+        background-image: url("../assets/dragnetharExperience/qol/equipment_loadout.png");
+    }
+    .is-loadout-feature:hover {
+        background-image: url("../assets/dragnetharExperience/qol/equipment_loadout.gif");
+    }
 }
+
 @media screen and (min-width: 1744px) {
     .is-custom-slider-container {
         justify-content: center;

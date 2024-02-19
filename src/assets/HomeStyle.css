@@ -3,11 +3,17 @@
 .is-home-picture {
     min-height: 200px;
     min-width: 200px;
-    background-color: var(--color-palette-orange);
+    background-color: rgb(219, 38, 38);
     border-radius: 50%;
     margin: 1rem ;
+    /* background-image: url("../assets/home/fugly.png"); */
 }
 
+.is-kalibrr-button {
+    &.MuiButtonBase-root {
+        font-size: calc(1.65em);
+    }
+}
 
 @media screen and (min-width: 1920px) {
     

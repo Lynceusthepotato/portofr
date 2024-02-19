@@ -67,6 +67,9 @@ nav {
     border-radius: 5px;
 }
 
+.is-custom-slider-card:hover {
+    transform: scale(1.1);
+}
 
 @media screen and (min-width: 400px) {
     nav {

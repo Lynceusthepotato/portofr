@@ -1,0 +1,30 @@
+.is-project {
+    background-color: var(--color-palette-dark-blue);
+    padding: 2rem;
+    justify-items: start;
+    min-height: 0;
+}
+
+.is-personal-tracker {
+    background-image: url("../assets/projects/finance_tracker.gif");
+}
+
+.is-cave {
+    background-image: url("../assets/illustration/randomart.png");
+}
+.is-ned {
+    background-image: url("../assets/illustration/NeverEndingDream.PNG");
+}
+.is-erf {
+    background-image: url("../assets/illustration/elden_rign_fanart.png");
+}
+
+@media screen and (min-width: 1366px) {
+    /* personal tracker */
+    .is-personal-tracker {
+        background-image: url("../assets/projects/finance_tracker.gif");
+    }
+    .is-personal-tracker:hover {
+        background-image: url("../assets/projects/finance_tracker.gif");
+    }
+}
