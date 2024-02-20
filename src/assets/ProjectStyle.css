@@ -1,8 +1,5 @@
 .is-project {
     background-color: var(--color-palette-dark-blue);
-    padding: 2rem;
-    justify-items: start;
-    min-height: 0;
 }
 
 .is-personal-tracker {

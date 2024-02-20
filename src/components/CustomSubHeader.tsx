@@ -12,6 +12,6 @@ const DefaultSubHeaderStyle: React.CSSProperties = {
 export default function CustomSubHeader({subHeaderStyle, title}:CustomSubHeaderProps) {
     const CustomSubHeaderStyle = {...DefaultSubHeaderStyle, ...subHeaderStyle}
     return (
-        <h4 style={CustomSubHeaderStyle}> {title} </h4>
+        <h4 style={CustomSubHeaderStyle} className="is-sub-header"> {title} </h4>
     )
 }

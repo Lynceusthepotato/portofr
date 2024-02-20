@@ -1,9 +1,12 @@
+import { Card } from "../pages/Experiences";
 
 type CustomSliderCardProps = {
     children: React.ReactNode;
     title: string;
     sliderCardStyle?: React.CSSProperties;
-    onClick?: () => void;
+    cardIndex?: number;
+    card?: Card;
+    onClick?: (card:Card) => void;
 }
 
 const DefaultSliderCardStyle:React.CSSProperties = {
@@ -19,12 +22,19 @@ export const DragnetharCustomCardTheme: React.CSSProperties = {
     border:'2px var(--Dragnethar-accent) solid',
 }
 
-export default function CustomSliderCard({children, title, sliderCardStyle, onClick}:CustomSliderCardProps) {
+export default function CustomSliderCard({children, title, sliderCardStyle, cardIndex, card, onClick}:CustomSliderCardProps) {
     const CustomSliderCardStyle = {...DefaultSliderCardStyle, ...sliderCardStyle}
+
+    const handleClick = () => {
+        if (onClick && card) {
+            onClick(card);
+        }
+    }
+
     return (
-        <div style={CustomSliderCardStyle} className="is-custom-slider-card" onClick={onClick}>
+        <div key={cardIndex} style={CustomSliderCardStyle} className="is-custom-slider-card" onClick={handleClick}>
             {children}
-            <p style={{margin:'10px'}}> {title} </p>
+            <h5 style={{margin:'10px', textAlign:'center'}}> {title} </h5>
         </div>
     );
 }

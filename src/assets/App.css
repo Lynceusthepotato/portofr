@@ -8,7 +8,6 @@
     --Dragnethar-accent: rgb(191, 180, 143);
     --Dragnethar-background: rgb(20, 52, 74);
     --Dragnethar-blue: rgb(0, 19, 46);
-
 }
 
 html, body {
@@ -19,6 +18,7 @@ html, body {
     color: var(--color-palette-white);
     font-family: "Poppins";
     font-weight: 400;
+    overflow-x: hidden;
 }
   
 p {
@@ -31,12 +31,12 @@ p {
     display: grid;
     justify-items: center;
     align-content: center;
+    width: 100%;
 }
 
 nav {
     display: flex;
     gap: 10px;
-    padding: 10px;
     justify-content: end;
     position: fixed;
     width: 100%;
@@ -54,8 +54,14 @@ nav {
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
+    height: 5px;
     background-color: transparent; 
+}
+
+::-webkit-scrollbar:hover {
+    width: 6px;
+    height: 6px;
 }
 
 ::-webkit-scrollbar-track {
@@ -69,6 +75,7 @@ nav {
 
 .is-custom-slider-card:hover {
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 @media screen and (min-width: 400px) {
@@ -78,5 +85,11 @@ nav {
 
     .is-navbar-content {
         padding: 15px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .is-sub-header {
+        text-align: center;
     }
 }

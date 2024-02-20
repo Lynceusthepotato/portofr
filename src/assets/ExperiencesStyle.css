@@ -2,27 +2,44 @@
 
 .is-experiences {
     min-height: 70vh;
+}
+
+.is-experiences-header {
     padding: 1rem;
 }
 
 .is-coralis-studio {
     padding: 2rem 1rem;
+    background-color: var(--color-palette-dark-blue);
+    width: 100%;
+    text-align: center;
+}
+
+.is-coralis-text {
+    padding: 2rem;
+    text-align: justify;
 }
 
 .is-dragnethar {
     display: grid;
     padding: 1rem;
     background-color: var(--Dragnethar-background);
-    width: 100%;
     border-top: 2px var(--Dragnethar-accent) solid;
     border-bottom: 2px var(--Dragnethar-accent) solid;
     overflow: hidden;
+    width: 100%;
 }
 
 .is-dragnethar-header {
     display: grid;
+    padding: 0;
+}
+
+.is-dragnethar-header-tool {
+    display: grid;
     grid-template-columns: 0.7fr 0.5fr;
     justify-content: space-between;
+    padding: 1rem;
 }
 
 .is-tech-use {
@@ -162,9 +179,6 @@
 }
 
 @media screen and (min-width: 1366px) {
-    .is-dragnethar-header {
-        grid-template-columns: 0.8fr 0.2fr;
-    }
     /* party */
     .is-party-combat {
         background-image: url("../assets/dragnetharExperience/partySystem/party_combat.png");
@@ -179,6 +193,18 @@
     }
     .is-loadout-feature:hover {
         background-image: url("../assets/dragnetharExperience/qol/equipment_loadout.gif");
+    }
+    
+    .is-dragnethar-header-tool {
+        grid-template-columns: 0.8fr 0.2fr;
+    }
+
+    .is-dragnethar-header {
+        padding: 4rem;
+    }
+
+    .is-coralis-text {
+        text-align: center;
     }
 }
 

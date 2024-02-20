@@ -1,0 +1,58 @@
+.is-modal-container {
+    border-radius: 20px 
+}
+
+.is-modal-content {
+    width: 85vw;
+    padding: 15px;
+    height: 85vh;
+    overflow: hidden;
+}
+
+.is-modal-card-container {
+    display: grid;
+    grid-gap: 1rem;
+    justify-items: center;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.is-modal-card-container::-webkit-scrollbar {
+    width: 2px;
+}
+
+.is-modal-picture {
+    width: 80vw;
+    min-height: 350px;
+    padding: 10px;
+}
+
+.is-modal-card-container.vertical {
+    grid-template-columns: 1fr;
+}
+
+.is-modal-card-content {
+    padding: 10px;
+}
+
+.is-modal-card-title {
+    text-align: center;
+    margin: 10px;
+}
+
+.is-modal-card-title.Dragnethar {
+    color: var(--Dragnethar-accent);
+}
+
+@media screen and (min-width: 400px) {
+    .is-modal-card-title {
+        text-align: start;
+    }
+}
+
+@media screen and (min-width: 1388px) {
+    .is-modal-content , .is-modal-picture{
+        width: 50vw;
+    }
+}

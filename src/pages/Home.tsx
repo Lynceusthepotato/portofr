@@ -6,7 +6,11 @@ import kalibrrSvg from '../assets/svgs/KalibrrLogo.svg';
 import '../assets/HomeStyle.css';
 import CustomIcons from "../components/CustomIcons";
 
-export default function Home() {
+type HomeSection = {
+    showModal: (visible: boolean, type: number) => void;
+}
+
+export default function Home({showModal}: HomeSection) {
     return (
         <div className='is-home is-container'>
             <div className='is-home-picture is-custom-image' />
