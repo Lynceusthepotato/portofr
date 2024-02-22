@@ -6,7 +6,9 @@ type CustomSliderCardProps = {
     sliderCardStyle?: React.CSSProperties;
     cardIndex?: number;
     card?: Card;
-    onClick?: (card:Card) => void;
+    customFunctionType?: number; // 0 = card function (with card parameter) || 1 = customFunction (without any parameter) 
+    cardFunction?: (card:Card) => void;
+    customFunction?: () => void;
 }
 
 const DefaultSliderCardStyle:React.CSSProperties = {
@@ -22,12 +24,20 @@ export const DragnetharCustomCardTheme: React.CSSProperties = {
     border:'2px var(--Dragnethar-accent) solid',
 }
 
-export default function CustomSliderCard({children, title, sliderCardStyle, cardIndex, card, onClick}:CustomSliderCardProps) {
+export default function CustomSliderCard({children, title, sliderCardStyle, cardIndex, card, customFunctionType = 0, cardFunction, customFunction}:CustomSliderCardProps) {
     const CustomSliderCardStyle = {...DefaultSliderCardStyle, ...sliderCardStyle}
 
     const handleClick = () => {
-        if (onClick && card) {
-            onClick(card);
+        switch(customFunctionType) {
+            case 0: 
+                if (cardFunction && card) {
+                    cardFunction(card);
+                }
+                break;
+            case 1:
+                if (customFunction) {
+                    customFunction();
+                }
         }
     }
 

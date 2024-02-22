@@ -20,9 +20,10 @@ export default function Projects({showModal}: ProjectSection) {
                 children={
                 <>
                 <CustomSliderCard 
-                sliderCardStyle={DragnetharCustomCardTheme}
-                children={<CustomImageCard className='is-custom-image is-personal-tracker'/>} title={"Personal Tracker"}
-                onClick={() => window.open('https://github.com/Lynceusthepotato/personal-tracker-fe', '_blank')}
+                  sliderCardStyle={DragnetharCustomCardTheme}
+                  children={<CustomImageCard className='is-custom-image is-personal-tracker' />} title={"Personal Tracker"}
+                  customFunctionType={1}                
+                  customFunction={() => window.open('https://github.com/Lynceusthepotato/personal-tracker-fe', '_blank')}   
                 />
                 </>}
             />

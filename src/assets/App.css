@@ -1,7 +1,7 @@
 :root {
-    --color-palette-black: rgb(4, 20, 31);
-    --color-palette-dark-blue: rgb(7, 34, 54);
-    --color-palette-orange: rgb(213, 160, 33);
+    --color-palette-black: rgb(21, 23, 26);
+    --color-palette-dark-blue: rgb(52, 58, 64);
+    --color-palette-orange: rgb(233, 236, 239);
     --color-palette-white: rgb(237, 231, 217);
 
     /* Dragnethar Color */
@@ -43,6 +43,7 @@ nav {
     background: var(--color-palette-black);
     font-size: calc(1em - 32%);
     z-index: 1;
+    padding: 10px
 }
 
 .is-navbar-content:hover {
@@ -81,6 +82,7 @@ nav {
 @media screen and (min-width: 400px) {
     nav {
         font-size: 1em;
+        padding: 0px;
     }
 
     .is-navbar-content {

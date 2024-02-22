@@ -296,7 +296,7 @@ export default function Experiences({showModal}: ExperienceSection) {
                                                     }
                                                     title={card.title}
                                                     card={card}
-                                                    onClick={handleModalCardDragnethar}
+                                                    cardFunction={handleModalCardDragnethar}
                                                 />
                                             ))}
                                         </>
