@@ -13,7 +13,8 @@ type HomeSection = {
 export default function Home({showModal}: HomeSection) {
     return (
         <div className='is-home is-container'>
-            <div className='is-home-picture is-custom-image' />
+            {/* <div className='is-home-picture is-custom-image' /> */}
+            <p> Note: This web will go under a big revamp, please be patient :D </p>
             <p> Muhammad Lukman Ismail Hanafi </p>
             <div className='is-home-buttons'> 
                 {/* <Tooltip title="Kalibrr">
